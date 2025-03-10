@@ -1,7 +1,11 @@
 const palindromes = function (string) {
     //clean up string
     function isLetter(letter) {
-        return ((letter.charCodeAt(0) >= 65) && (letter.charCodeAt(0) <= 122)) || ((letter.charCodeAt(0) >= 48) && (letter.charCodeAt(0) <= 57))
+        return (
+            ((letter.charCodeAt(0) >= 65) && (letter.charCodeAt(0) <= 122))
+            ||
+            ((letter.charCodeAt(0) >= 48) && (letter.charCodeAt(0) <= 57))
+        )
     }
     let cleanString = ""
     for (let i = 0; i < string.length; i++) {
